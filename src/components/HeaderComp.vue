@@ -225,15 +225,15 @@ section {
 
             .get-in {
                 color: white;
-                background-color: rgb(5 130 131);
+                background-color: rgb(4 131 131);
                 padding: 10px;
                 border-radius: 5px;
             }
 
             #read {
-                color: rgb(5 130 131);
+                color: rgb(4 131 131);
                 padding: 10px;
-                border: 1px solid rgb(5 130 131);
+                border: 1px solid rgb(4 131 131);
                 border-radius: 5px;
                 margin-left: 10px;
             }
