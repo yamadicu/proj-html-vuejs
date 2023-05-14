@@ -12,7 +12,7 @@ export default {
 
             <!-- div about the network -->
             <div class="col-4">
-                <span id="txt-network">about the network</span>
+                <span class="subtitle">about the network</span>
                 <div id="titolo" class="mt-3">
                     <h1 id="the-company">The</h1>
                     <h1>Company</h1>
@@ -100,12 +100,6 @@ section {
         display: flex;
 
 
-        #txt-network {
-            color: rgb(0 166 166);
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
 
         #titolo {
             display: flex;
@@ -142,12 +136,13 @@ section {
                         margin-right: 5px;
                     }
                 }
+
+                span {
+                    color: grey;
+                }
             }
         }
     }
 
-    span {
-        color: grey;
-    }
 }
 </style>

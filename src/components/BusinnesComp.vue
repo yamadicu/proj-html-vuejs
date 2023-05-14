@@ -7,7 +7,7 @@ export default {
 <template>
     <section>
         <div class="container">
-            <span id="businnes">our businnes area</span>
+            <span class="subtitle">our businnes area</span>
 
             <div id="titolo">
                 <h2 class="fw-bold">Excellence in</h2>
@@ -103,12 +103,6 @@ section {
     display: flex;
     align-items: center;
     height: 90vh;
-
-    #businnes {
-        color: rgb(0 166 166);
-        text-transform: uppercase;
-        font-weight: bolder;
-    }
 
     #titolo {
         display: flex;

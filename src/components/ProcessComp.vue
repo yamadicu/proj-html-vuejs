@@ -10,7 +10,7 @@ export default {
 
             <div>
 
-                <span id="how-it">how it works in practice</span>
+                <span class="subtitle">how it works in practice</span>
 
                 <div id="titolo">
                     <h2 class="proces">Process</h2>
