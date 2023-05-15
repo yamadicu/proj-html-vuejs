@@ -42,7 +42,7 @@ export default {
 
                 <div class="d-flex align-items-center">
 
-                    <span class="fs-4 fw-medium text-uppercase text-nex nex">nex</span>
+                    <span class="fs-4 fw-medium text-uppercase nex">nex</span>
                     <span class="fs-4 fw-medium text-uppercase">gen</span>
 
                 </div>
@@ -170,9 +170,6 @@ section {
                 padding-bottom: 10px;
                 border-top-left-radius: 50px;
                 border-bottom-left-radius: 50px;
-            }
-
-            .text-nex {
                 color: rgb(0 166 166);
             }
 

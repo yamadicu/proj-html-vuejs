@@ -45,54 +45,48 @@ section {
     height: 40vh;
     padding-top: 100px;
 
-    .extra-cont {
-        display: flex;
-        justify-content: center;
 
-        .contenuto {
+
+    .contenuto {
+        color: white;
+
+        #titolo {
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
+            padding-top: 10px;
 
-            #titolo {
-                display: flex;
-                align-items: center;
-                padding-top: 10px;
+            .know {
+                background-color: rgb(4, 131, 131, 0.2);
+                padding: 10px;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+        }
 
-                .know {
-                    background-color: rgb(4, 131, 131, 0.2);
-                    padding: 10px;
-                    border-radius: 5px;
-                    margin-right: 10px;
-                }
+        #iscriviti {
+            margin-left: 50px;
+
+
+            input {
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                width: 20rem;
+                opacity: 0.4;
             }
 
-            #iscriviti {
-                margin-left: 50px;
-
-
-                input {
-                    margin-bottom: 10px;
-                    padding: 10px;
-                    border-radius: 5px;
-                    border: none;
-                    width: 20rem;
-                    opacity: 0.4;
-                }
-
-                .bottone {
-                    color: white;
-                    background-color: rgb(5 130 131);
-                    border-radius: 5px;
-                    padding: 10px;
-                    text-transform: uppercase;
-                    border: none;
-                }
-
+            .bottone {
+                color: white;
+                background-color: rgb(5 130 131);
+                border-radius: 5px;
+                padding: 10px;
+                text-transform: uppercase;
+                border: none;
             }
 
         }
+
     }
 }
 </style>

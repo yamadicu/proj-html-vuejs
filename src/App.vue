@@ -6,6 +6,7 @@ import ProcessComp from './components/ProcessComp.vue';
 import TeamComp from './components/TeamComp.vue';
 import LatestComp from './components/LatestComp.vue';
 import NewsComp from './components/NewsComp.vue';
+import FooterComp from './components/FooterComp.vue';
 export default {
     name: "app",
     components: {
@@ -16,6 +17,7 @@ export default {
         TeamComp,
         LatestComp,
         NewsComp,
+        FooterComp
     }
 }
 </script>
@@ -28,6 +30,7 @@ export default {
     <TeamComp />
     <LatestComp />
     <NewsComp />
+    <FooterComp />
 </template>
 
 <style lang="scss">
