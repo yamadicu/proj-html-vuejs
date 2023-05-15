@@ -154,10 +154,11 @@ export default {
 section {
     background-color: rgb(17 17 23);
     height: 70vh;
-    padding-top: 100px;
+    padding-top: 80px;
 
     .contenitore-totale {
         display: flex;
+        justify-content: center;
 
         .aside-left {
             color: white;
@@ -189,8 +190,8 @@ section {
 
                     img {
                         margin-right: 20px;
-                        height: 150px;
-                        width: 120px;
+                        height: 120px;
+                        width: 100px;
                         border-radius: 5px;
                     }
 
