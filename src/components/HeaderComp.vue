@@ -129,7 +129,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    background-image: url(../public/img/bg-6.jpg);
+    background-image: url(img/bg-6.jpg);
     height: 90vh;
 
     #notte {

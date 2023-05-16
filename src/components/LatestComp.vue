@@ -1,15 +1,23 @@
 <script>
+import SingolaCard from './SingolaCard.vue';
 export default {
     name: "LatestComp",
-
+    components: {
+        SingolaCard
+    },
     data() {
         return {
-            imgSfondo: [
-
+            immagini: [
                 {
-                    immagine: "/img/news-1.jpg"
+                    "latest": "/img/news-1.jpg",
+                    "titolo": "Increasing creativity is possible for everyone"
+                }, {
+                    "latest": "/img/news-2.jpg",
+                    "titolo": "Because market research is part of the business plan"
+                }, {
+                    "latest": "/img/news-3.jpg",
+                    "titolo": "Working from home is now a trend"
                 }
-
             ]
         }
     }
@@ -39,31 +47,10 @@ export default {
             </div>
 
             <!-- card -->
-            <div id="card-cont">
-
-                <div id="img">
-
-                    <div class="opacity">
-
-                        <h4>
-                            Increasing creativity is possible for everyone
-                        </h4>
-
-                    </div>
-
-                </div>
-                <div id="img2">
-                    <h4>
-                        Because market research is part of the businnes plan
-                    </h4>
-                </div>
-                <div id="img3">
-                    <h4>
-                        Working from home is now a trend
-                    </h4>
-                </div>
-
+            <div class="cont">
+                <SingolaCard v-for="(element, index) in immagini" :key="index" :Singola="element" />
             </div>
+
 
         </div>
 
@@ -108,32 +95,10 @@ section {
         }
     }
 
-    #card-cont {
+    .cont {
         display: flex;
-
-        #img {
-            background-image: url("/img/news-1.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            width: 400px;
-
-
-            .opacity {
-                background-color: rgba(0, 0, 0, 0.5);
-                height: 100%;
-                display: flex;
-                align-items: end;
-                justify-content: center;
-
-                h4 {
-                    color: white;
-                    text-align: center;
-                    font-weight: bold;
-                }
-            }
-        }
+        align-items: center;
+        justify-content: space-between;
     }
 }
 </style>
