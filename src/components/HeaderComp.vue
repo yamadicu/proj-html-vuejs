@@ -4,7 +4,34 @@ export default {
     name: "HeaderComp",
     data() {
         return {
-            store
+            store,
+            linkNav: [
+                {
+                    url: '/',
+                    name: "home",
+                    stato: true
+                }, {
+                    url: '/',
+                    name: "about",
+                    stato: false
+                }, {
+                    url: '/',
+                    name: "service",
+                    stato: false
+                }, {
+                    url: '/',
+                    name: "process",
+                    stato: false
+                }, {
+                    url: '/',
+                    name: "team",
+                    stato: false
+                }, {
+                    url: '/',
+                    name: "blog",
+                    stato: false
+                }
+            ]
         }
     }
 }
@@ -49,23 +76,8 @@ export default {
 
                 <div id="lista">
                     <ul>
-                        <li>
-                            <a href="#">home</a>
-                        </li>
-                        <li>
-                            <a href="#">about</a>
-                        </li>
-                        <li>
-                            <a href="#">service</a>
-                        </li>
-                        <li>
-                            <a href="#">process</a>
-                        </li>
-                        <li>
-                            <a href="#">team</a>
-                        </li>
-                        <li>
-                            <a href="#">blog</a>
+                        <li v-for="(element, index) in linkNav" :key="index" :class="element.stato ? 'active' : ''">
+                            <a href="element.url">{{ element.name }}</a>
                         </li>
                         <li class="ms-1">
                             <a href="#" class="get-in">get in touch</a>
@@ -154,53 +166,60 @@ section {
         }
     }
 
-    nav {
+
+    .cont-nav {
+
         display: flex;
         justify-content: space-between;
 
-        .cont-nav {
+        .nex {
+            background-color: rgb(192 218 220);
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            color: rgb(0 166 166);
+        }
 
-            display: flex;
-            justify-content: space-between;
+        #lista {
 
-            .nex {
-                background-color: rgb(192 218 220);
-                padding-left: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-top-left-radius: 50px;
-                border-bottom-left-radius: 50px;
-                color: rgb(0 166 166);
-            }
+            ul {
 
-            #lista {
+                display: flex;
+                align-items: center;
 
-                ul {
+                li {
+                    list-style: none;
+                    margin: 0 10px;
+                    line-height: 100px;
 
-                    display: flex;
-                    align-items: center;
+                    a {
+                        text-decoration: none;
+                        margin-inline: 10px;
+                        color: black;
+                        text-transform: uppercase;
 
-                    li {
-                        list-style: none;
+                    }
 
-                        a {
-                            text-decoration: none;
-                            margin-inline: 10px;
-                            color: black;
-                            text-transform: uppercase;
+                    &.active {
+                        border-bottom: 3px solid rgb(5 130 131);
+                    }
 
-                        }
+                    &.active a {
+                        color: rgb(5 130 131);
+                    }
 
-                        .get-in {
-                            color: white;
-                            background-color: rgb(5 130 131);
-                            padding: 10px;
-                            border-radius: 5px;
-                        }
+                    .get-in {
+                        color: white;
+                        background-color: rgb(5 130 131);
+                        padding: 10px;
+                        border-radius: 5px;
                     }
                 }
             }
         }
+
     }
 
     .cont-iscr {
