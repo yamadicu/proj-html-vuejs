@@ -41,7 +41,7 @@ export default {
             background-color: rgba(0, 0, 0, 0.404);
             width: 100%;
             height: 100%;
-            border-radius: 15px;
+            border-radius: 10px;
             display: flex;
             align-items: end;
 

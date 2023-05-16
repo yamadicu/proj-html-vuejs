@@ -75,7 +75,7 @@ export default {
             </div>
         </nav>
 
-
+        <!-- sezione fusion and acquisitions -->
         <div class="d-flex container">
 
             <div class="col-9"></div>
@@ -225,6 +225,14 @@ section {
                 background-color: rgb(4 131 131);
                 padding: 10px;
                 border-radius: 5px;
+            }
+
+            input {
+                width: 10rem;
+            }
+
+            button {
+                width: 10rem;
             }
 
             #read {
